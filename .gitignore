@@ -11,3 +11,8 @@
 /ClientTier/ClientGenerateContract2/bin
 /ServerTier/BusinessLayer/Business/bin
 /ServerTier/EntityLayer/DTOEntity/bin
+/ServerTier/PresentationLayer/ServiceHost/*.user
+/ServerTier/PresentationLayer/ServiceHost/Properties/PublishProfiles
+/ClientTier/Client/*.user
+/ServerTier/BusinessLayer/Business/*.user
+/ServerTier/EntityLayer/DTOEntity/*.user
