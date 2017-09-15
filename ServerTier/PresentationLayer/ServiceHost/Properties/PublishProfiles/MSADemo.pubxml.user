@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\PublishMSADemo</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>08/18/2017 18:14:08</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>08/18/2017 18:14:08</publishTime>
+    </File>
+    <File Include="bin/Business.dll">
+      <publishTime>08/18/2017 15:50:49</publishTime>
+    </File>
+    <File Include="bin/DTOEntity.dll">
+      <publishTime>08/18/2017 15:50:49</publishTime>
+    </File>
+    <File Include="bin/FxCommon.dll">
+      <publishTime>04/27/2017 15:00:52</publishTime>
+    </File>
+    <File Include="bin/MSA.dll">
+      <publishTime>04/28/2017 11:45:23</publishTime>
+    </File>
+    <File Include="bin/protobuf-net.dll">
+      <publishTime>03/06/2017 16:33:30</publishTime>
+    </File>
+    <File Include="bin/ServiceHost.dll">
+      <publishTime>08/18/2017 18:14:04</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>08/18/2017 18:14:05</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/18/2017 15:50:50</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

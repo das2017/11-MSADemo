@@ -1,0 +1,32 @@
+创建张订单：
+Id：1
+{  
+  "CustomerName": "newCustomerName",
+  "IsTakeAway": true,
+  "CreatedDate": "2016-06-28",
+  "StatusCode": "InActive",
+  "OrderItemList": [
+    {
+      "Product": {
+        "Id": 2
+      },
+      "Quantity": 650
+    }
+  ]
+}
+
+更新指定订单详情：
+Id：3
+{  
+  "CustomerName": "name_updated",
+  "StatusCode": "Active",
+  "OrderItemList": [
+    {
+      "Id": 2,
+      "Product": {
+        "Id": 5
+      },
+      "Quantity": 30
+    }
+  ]
+}

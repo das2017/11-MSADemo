@@ -1,0 +1,13 @@
+/*.suo
+/ServerTier/PresentationLayer/ServiceHost/obj
+/ClientTier/Client/obj
+/ClientTier/ClientGenerateContract1/obj
+/ClientTier/ClientGenerateContract2/obj
+/ServerTier/BusinessLayer/Business/obj
+/ServerTier/EntityLayer/DTOEntity/obj
+/ServerTier/PresentationLayer/ServiceHost/bin
+/ClientTier/Client/bin
+/ClientTier/ClientGenerateContract1/bin
+/ClientTier/ClientGenerateContract2/bin
+/ServerTier/BusinessLayer/Business/bin
+/ServerTier/EntityLayer/DTOEntity/bin

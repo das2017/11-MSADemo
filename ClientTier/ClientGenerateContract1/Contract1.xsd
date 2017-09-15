@@ -1,0 +1,156 @@
+﻿<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DTOEntity" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DTOEntity">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+  <xs:complexType name="GetOrderListRequest">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="GetOrderListRequest" nillable="true" type="tns:GetOrderListRequest"/>
+  <xs:complexType name="GetOrderRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Id" type="xs:int"/>
+      <xs:element minOccurs="0" name="IsTakeAway" nillable="true" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="StatusCode" nillable="true" type="tns:StatusCode"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetOrderRequest" nillable="true" type="tns:GetOrderRequest"/>
+  <xs:simpleType name="StatusCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSet">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">-1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InActive">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Active">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="StatusCode" nillable="true" type="tns:StatusCode"/>
+  <xs:complexType name="GetOrderByIdRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetOrderByIdRequest" nillable="true" type="tns:GetOrderByIdRequest"/>
+  <xs:complexType name="OrderRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Id" type="xs:int"/>
+      <xs:element minOccurs="0" name="IsTakeAway" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="OrderItemList" nillable="true" type="tns:ArrayOfOrderItem"/>
+      <xs:element minOccurs="0" name="StatusCode" type="tns:StatusCode"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRequest" nillable="true" type="tns:OrderRequest"/>
+  <xs:complexType name="ArrayOfOrderItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderItem" nillable="true" type="tns:OrderItem"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderItem" nillable="true" type="tns:ArrayOfOrderItem"/>
+  <xs:complexType name="OrderItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int"/>
+      <xs:element minOccurs="0" name="Product" nillable="true" type="tns:Product"/>
+      <xs:element minOccurs="0" name="Quantity" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderItem" nillable="true" type="tns:OrderItem"/>
+  <xs:complexType name="Product">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int"/>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="StatusCode" type="tns:StatusCode"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Product" nillable="true" type="tns:Product"/>
+  <xs:complexType name="DeleteOrderRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeleteOrderRequest" nillable="true" type="tns:DeleteOrderRequest"/>
+  <xs:complexType name="GetProductListRequest">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="GetProductListRequest" nillable="true" type="tns:GetProductListRequest"/>
+  <xs:complexType name="GetProductRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int"/>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetProductRequest" nillable="true" type="tns:GetProductRequest"/>
+  <xs:complexType name="OrderListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OrderList" nillable="true" type="tns:ArrayOfOrderResponse"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderListResponse" nillable="true" type="tns:OrderListResponse"/>
+  <xs:complexType name="ArrayOfOrderResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderResponse" nillable="true" type="tns:OrderResponse"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderResponse" nillable="true" type="tns:ArrayOfOrderResponse"/>
+  <xs:complexType name="OrderResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Id" type="xs:int"/>
+      <xs:element minOccurs="0" name="IsTakeAway" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="OrderItemList" nillable="true" type="tns:ArrayOfOrderItemResponse"/>
+      <xs:element minOccurs="0" name="StatusCode" type="tns:StatusCode"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderResponse" nillable="true" type="tns:OrderResponse"/>
+  <xs:complexType name="ArrayOfOrderItemResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderItemResponse" nillable="true" type="tns:OrderItemResponse"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderItemResponse" nillable="true" type="tns:ArrayOfOrderItemResponse"/>
+  <xs:complexType name="OrderItemResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int"/>
+      <xs:element minOccurs="0" name="Product" nillable="true" type="tns:ProductResponse"/>
+      <xs:element minOccurs="0" name="Quantity" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderItemResponse" nillable="true" type="tns:OrderItemResponse"/>
+  <xs:complexType name="ProductResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int"/>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="StatusCode" type="tns:StatusCode"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductResponse" nillable="true" type="tns:ProductResponse"/>
+  <xs:complexType name="ProductListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ProductList" nillable="true" type="tns:ArrayOfProductResponse"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductListResponse" nillable="true" type="tns:ProductListResponse"/>
+  <xs:complexType name="ArrayOfProductResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProductResponse" nillable="true" type="tns:ProductResponse"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProductResponse" nillable="true" type="tns:ArrayOfProductResponse"/>
+</xs:schema>

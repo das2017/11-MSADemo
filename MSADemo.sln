@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServerTier", "ServerTier", "{7420AFC5-21B8-47BC-AE8F-2B641851AACE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClientTier", "ClientTier", "{284DFC34-4031-44B0-A0B7-7026A86D530B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{A5FA52B4-D061-4BB3-9E27-A38355C02E5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHost", "ServerTier\PresentationLayer\ServiceHost\ServiceHost.csproj", "{B28DDAA0-E16D-4BEC-9B8D-7CDCB2655080}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceDll", "ReferenceDll", "{3DD1C54F-6540-4460-A531-A3B8492CF719}"
+	ProjectSection(SolutionItems) = preProject
+		ReferenceDll\FxCommon.dll = ReferenceDll\FxCommon.dll
+		ReferenceDll\FxCommon.xml = ReferenceDll\FxCommon.xml
+		ReferenceDll\MSA.dll = ReferenceDll\MSA.dll
+		ReferenceDll\MSA.xml = ReferenceDll\MSA.xml
+		ReferenceDll\protobuf-net.dll = ReferenceDll\protobuf-net.dll
+		ReferenceDll\protobuf-net.xml = ReferenceDll\protobuf-net.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityLayer", "EntityLayer", "{5306D848-6723-43CC-91CB-38ABB68CC4F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOEntity", "ServerTier\EntityLayer\DTOEntity\DTOEntity.csproj", "{294FE21E-2491-45C4-9F95-51AD820DF389}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLayer", "BusinessLayer", "{D729ACA5-35FE-445B-9D33-B069C7DFC3E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataLayer", "DataLayer", "{2F8CD512-9CA2-44BE-A0D3-834D3B2E44F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "ServerTier\BusinessLayer\Business\Business.csproj", "{EC47794F-5B22-4D6A-852F-6BE1E9A0C772}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "ClientTier\Client\Client.csproj", "{0C7B1FE3-B590-4CBE-8EAA-BA844115052D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientGenerateContract1", "ClientTier\ClientGenerateContract1\ClientGenerateContract1.csproj", "{3B71F6B4-5D24-48C4-B6AF-82676A4FC4A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientGenerateContract2", "ClientTier\ClientGenerateContract2\ClientGenerateContract2.csproj", "{2E468DA1-8CF7-47BE-8BA1-D81FB63EFE5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{9AFAB09A-D10C-4839-9165-54244C0B0FD5}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\MSA插件.7z = Documents\MSA插件.7z
+		Documents\生成代理服务类的方法.doc = Documents\生成代理服务类的方法.doc
+		Documents\用在MSA API UI的请求参数参考.txt = Documents\用在MSA API UI的请求参数参考.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B28DDAA0-E16D-4BEC-9B8D-7CDCB2655080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28DDAA0-E16D-4BEC-9B8D-7CDCB2655080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28DDAA0-E16D-4BEC-9B8D-7CDCB2655080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28DDAA0-E16D-4BEC-9B8D-7CDCB2655080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{294FE21E-2491-45C4-9F95-51AD820DF389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{294FE21E-2491-45C4-9F95-51AD820DF389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{294FE21E-2491-45C4-9F95-51AD820DF389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{294FE21E-2491-45C4-9F95-51AD820DF389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC47794F-5B22-4D6A-852F-6BE1E9A0C772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC47794F-5B22-4D6A-852F-6BE1E9A0C772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC47794F-5B22-4D6A-852F-6BE1E9A0C772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC47794F-5B22-4D6A-852F-6BE1E9A0C772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C7B1FE3-B590-4CBE-8EAA-BA844115052D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C7B1FE3-B590-4CBE-8EAA-BA844115052D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C7B1FE3-B590-4CBE-8EAA-BA844115052D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C7B1FE3-B590-4CBE-8EAA-BA844115052D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B71F6B4-5D24-48C4-B6AF-82676A4FC4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B71F6B4-5D24-48C4-B6AF-82676A4FC4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B71F6B4-5D24-48C4-B6AF-82676A4FC4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B71F6B4-5D24-48C4-B6AF-82676A4FC4A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E468DA1-8CF7-47BE-8BA1-D81FB63EFE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E468DA1-8CF7-47BE-8BA1-D81FB63EFE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E468DA1-8CF7-47BE-8BA1-D81FB63EFE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E468DA1-8CF7-47BE-8BA1-D81FB63EFE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5FA52B4-D061-4BB3-9E27-A38355C02E5E} = {7420AFC5-21B8-47BC-AE8F-2B641851AACE}
+		{B28DDAA0-E16D-4BEC-9B8D-7CDCB2655080} = {A5FA52B4-D061-4BB3-9E27-A38355C02E5E}
+		{5306D848-6723-43CC-91CB-38ABB68CC4F9} = {7420AFC5-21B8-47BC-AE8F-2B641851AACE}
+		{294FE21E-2491-45C4-9F95-51AD820DF389} = {5306D848-6723-43CC-91CB-38ABB68CC4F9}
+		{D729ACA5-35FE-445B-9D33-B069C7DFC3E5} = {7420AFC5-21B8-47BC-AE8F-2B641851AACE}
+		{2F8CD512-9CA2-44BE-A0D3-834D3B2E44F7} = {7420AFC5-21B8-47BC-AE8F-2B641851AACE}
+		{EC47794F-5B22-4D6A-852F-6BE1E9A0C772} = {D729ACA5-35FE-445B-9D33-B069C7DFC3E5}
+		{0C7B1FE3-B590-4CBE-8EAA-BA844115052D} = {284DFC34-4031-44B0-A0B7-7026A86D530B}
+		{3B71F6B4-5D24-48C4-B6AF-82676A4FC4A5} = {284DFC34-4031-44B0-A0B7-7026A86D530B}
+		{2E468DA1-8CF7-47BE-8BA1-D81FB63EFE5E} = {284DFC34-4031-44B0-A0B7-7026A86D530B}
+	EndGlobalSection
+EndGlobal
