@@ -19,6 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceDll", "ReferenceDl
 		ReferenceDll\MSA.xml = ReferenceDll\MSA.xml
 		ReferenceDll\protobuf-net.dll = ReferenceDll\protobuf-net.dll
 		ReferenceDll\protobuf-net.xml = ReferenceDll\protobuf-net.xml
+		ReferenceDll\Readme.txt = ReferenceDll\Readme.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityLayer", "EntityLayer", "{5306D848-6723-43CC-91CB-38ABB68CC4F9}"
