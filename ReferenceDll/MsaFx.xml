@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>MSA</name>
+        <name>MsaFx</name>
     </assembly>
     <members>
         <member name="T:ServiceStack.Authentication.OAuth2.FourSquareOAuth2Provider">

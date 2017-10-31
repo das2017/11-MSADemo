@@ -38,12 +38,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FxCommon">
+    <Reference Include="FxCommon, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\ReferenceDll\FxCommon.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="MSA">
-      <HintPath>..\..\..\ReferenceDll\MSA.dll</HintPath>
+    <Reference Include="MsaFx">
+      <HintPath>..\..\..\ReferenceDll\MsaFx.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />

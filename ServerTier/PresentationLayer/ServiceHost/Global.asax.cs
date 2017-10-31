@@ -21,7 +21,7 @@ namespace ServiceHost
         public class ServiceDemoAppHost : AppHostBase
         {
             public ServiceDemoAppHost()
-                : base("MSA API Demo", typeof(ServiceDemoAppHost).Assembly)
+                : base("MsaFx API Demo", typeof(ServiceDemoAppHost).Assembly)
             {
                 //配置路由规则：
                 //如：/orders/[{path参数}.xml|json|html|jsv|csv][(?query参数1={值}&query参数2={值}&......&query参数n={值})]

@@ -36,8 +36,8 @@
     <Reference Include="FxCommon">
       <HintPath>..\..\ReferenceDll\FxCommon.dll</HintPath>
     </Reference>
-    <Reference Include="MSA">
-      <HintPath>..\..\ReferenceDll\MSA.dll</HintPath>
+    <Reference Include="MsaFx">
+      <HintPath>..\..\ReferenceDll\MsaFx.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net">
       <HintPath>..\..\ReferenceDll\protobuf-net.dll</HintPath>
